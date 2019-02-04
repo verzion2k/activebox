@@ -1,0 +1,28 @@
+{
+    "name": "activebox",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass --watch public/sass -o public/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/verzion2k/activebox.git"
+    },
+    "author": "Zsolt",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/verzion2k/activebox/issues"
+    },
+    "homepage": "https://github.com/verzion2k/activebox#readme",
+    "dependencies": {
+        "bootstrap": "^4.2.1",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "jquery": "^3.3.1",
+        "nodemon": "^1.18.9",
+        "popper.js": "^1.14.7"
+    }
+}
