@@ -15,12 +15,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
 
+    <!-- Hamburgers CSS -->
+    <link rel="stylesheet" href="/hamburgers/dist/hamburgers.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
     <!-- Structure -->
 
-    <!-- [1] Header -->
+    <!-- [1] Header Wrapper -->
     <!-- [1.2] Navigation Menu -->
     <!-- [3] Features -->
     <!-- [4] Works -->
@@ -33,14 +36,20 @@
 
 <body>
 
+    <!-- [1] Header Wrapper -->
     <header class="container-fluid" id="header">
-        <!-- [1] Navigation Menu -->
+
+        <!-- [1.2] Navigation Menu -->
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <img src="/img/header/logo.png" alt="logo">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
+
+                <button class="hamburger hamburger--stand" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="mainNav">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="#" title="features">features</a>
@@ -52,8 +61,25 @@
                 </div>
             </nav>
         </div>
-        <!-- [1] Navigation Menu End -->
+        <!-- [1.2] Navigation Menu End -->
+
+        <div class="container header">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center text-white">
+                    <h1 class="header__title">
+                        Your Favorite One Page Multi Purpose Template
+                    </h1>
+                    <h2 class="header__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.
+                    </h2>
+                    <button type="button" class="header__button">
+                        Find Out More
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
+    <!-- [1] Header Wrapper End-->
 
     <!-- jQuery, Popper.js, Bootstrap 4 -->
     <script src="/jquery/dist/jquery.min.js"></script>
@@ -61,6 +87,8 @@
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+
 </body>
 
 </html>
