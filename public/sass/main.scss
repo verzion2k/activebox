@@ -66,6 +66,7 @@ body {
 
 .navbar {
     padding: 2.875rem 0;
+    border-bottom: 1px solid $primary-fontColor;
     .nav-item {
         color: $primary-fontColor;
         font-weight: 700;
@@ -181,5 +182,139 @@ body {
     }
     &__socials--linkedin {
         padding: 13px 13px;
+    }
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    background-color: #53354a;
+    &__block {
+        margin: 0 4.375rem;
+    }
+    &__title {
+        font-size: 2.25rem;
+        font-family: $testimonials-font;
+        color: #fff;
+    }
+    &__author {
+        padding: 1.875rem 0 4rem;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.owl-dot {
+    outline: none!important;
+}
+
+
+/* Contact */
+
+.contact {
+    padding: 6.25rem 0;
+    &__title--text {
+        color: $title-fontColor;
+        font-weight: 700;
+        padding: 0 1rem 3rem;
+        text-align: center;
+    }
+    &__button {
+        background-color: $highlight-color;
+        color: #fff;
+        border: 0;
+        outline: 0!important;
+        cursor: pointer;
+        padding: 1.125rem 3.125rem;
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+    }
+    &__button:hover {
+        opacity: 0.7;
+    }
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: $highlight-color;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($highlight-color, .25);
+}
+
+::placeholder {
+    font-size: $primary-fontSize;
+    color: $primary-fontColor;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 6.25rem 0;
+    background-color: #3a3e64;
+    text-align: center;
+    &__title {
+        color: #fff;
+        font-size: $primary-fontSize;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.375rem;
+    }
+    &__text {
+        font-size: $primary-fontSize;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+    &__socials--border {
+        border: 2px solid #fff;
+    }
+    &__socials--link:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+    &__socials--link:hover {
+        text-decoration: none;
+    }
+    &__socials--link:hover &__socials--border {
+        background-color: $highlight-color;
+        transition: all 0.5s ease;
+    }
+    &__socials--facebook {
+        padding: 12px 17px;
+    }
+    &__socials--twitter {
+        padding: 14px 11px;
+    }
+    &__socials--linkedin {
+        padding: 13px 13px;
+    }
+}
+
+
+/* Copyright */
+
+.copyright {
+    background-color: #313454;
+    padding: 1.875rem 0;
+    &__title,
+    &__text {
+        font-size: $primary-fontSize;
+    }
+    &__text {
+        margin-bottom: 0;
+    }
+    &__link {
+        color: #fff;
+        font-weight: 700;
+        transition: all 0.5s ease;
+    }
+    &__link:hover {
+        color: $highlight-color;
+        text-decoration: none;
+        transition: all 0.5s ease;
     }
 }

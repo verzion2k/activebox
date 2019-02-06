@@ -18,10 +18,12 @@
     <!-- Hamburgers CSS -->
     <link rel="stylesheet" href="/hamburgers/dist/hamburgers.css">
 
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owl.carousel/dist/assets/owl.theme.default.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
-
-    <!-- Structure -->
 
     <!-- [1] Header Wrapper -->
     <!-- [1.2] Navigation Menu -->
@@ -308,18 +310,173 @@
     <!-- [4] Our Team -->
 
     <!-- [5] Testimonials -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="/img/testimonials/testimonials-img.png" alt="testimonials">
+    <div class="container-fluid px-0 testimonials">
+
+        <div class="row mx-0 align-items-center">
+            <div class="col-md-6 px-0">
+                <img src="/img/testimonials/testimonials-img.png" alt="testimonials" class="img-fluid">
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6 px-0">
+                <div class="owl-carousel owl-theme">
+
+                    <div class="testimonials__block">
+                        <h2 class="testimonials__title">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </h2>
+                        <h3 class="testimonials__author">
+                            Susan Sims, Interaction Designer at XYZ
+                        </h3>
+                    </div>
+
+                    <div class="testimonials__block">
+                        <h2 class="testimonials__title">
+                            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat placeat vel architecto ad, magni id...”
+                        </h2>
+                        <h3 class="testimonials__author">
+                            John Doe, CEO at XYZ
+                        </h3>
+                    </div>
+
+                    <div class="testimonials__block">
+                        <h2 class="testimonials__title">
+                            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, tempore?...”
+                        </h2>
+                        <h3 class="testimonials__author">
+                            Hello World, Web Developer at XYZ
+                        </h3>
+                    </div>
+
+                    <div class="testimonials__block">
+                        <h2 class="testimonials__title">
+                            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reprehenderit voluptate dolore quod aut deleniti totam architecto odit possimus fugit....”
+                        </h2>
+                        <h3 class="testimonials__author">
+                            Jason Bourne, Vice President at XYZ
+                        </h3>
+                    </div>
+
+                    <div class="testimonials__block">
+                        <h2 class="testimonials__title">
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </h2>
+                        <h3 class="testimonials__author">
+                            Aviva, Singer at XYZ
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
     </div>
     <!-- [5] Testimonials End -->
 
-    <!-- jQuery, Popper.js, Bootstrap 4 -->
+    <!-- [6] Contact -->
+    <div class="container contact">
+        <div class="row justify-content-center mx-0">
+            <div class="contact__title">
+                <h2 class="contact__title--text">Feel free to contact us if you have any questions!</h2>
+            </div>
+            <div class="col-md-6 pb-4 text-center text-md-left">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="3" placeholder="Leave your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="contact__button">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d39733.072797954344!2d-0.16277759602732542!3d51.507399109247395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2zTG9uZG9uLCBFZ3llc8O8bHQgS2lyw6FseXPDoWc!3m2!1d51.5073509!2d-0.1277583!4m0!5e0!3m2!1shu!2shu!4v1549474094023"
+                    width="100%" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- [6] Contact End -->
+
+    <!-- [7] Footer -->
+    <footer class="container-fluid footer" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h4 class="footer__title">
+                        Location
+                    </h4>
+                    <h5 class="footer__text">
+                        3481 Melrose Place
+                    </h5>
+                    <h5 class="footer__text">
+                        Beverly Hills, CA 90210
+                    </h5>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="footer__title">
+                        Share with Love
+                    </h4>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__socials--link">
+                            <img src="/img/footer/footer-icon-1.png" alt="fb" class="footer__socials--facebook footer__socials--border">
+                        </a>
+                        <a href="#" class="footer__socials--link">
+                            <img src="/img/footer/footer-icon-2.png" alt="tw" class="footer__socials--twitter footer__socials--border">
+                        </a>
+                        <a href="#" class="footer__socials--link">
+                            <img src="/img/footer/footer-icon-3.png" alt="li" class="footer__socials--linkedin footer__socials--border">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="footer__title">
+                        About ActiveBox
+                    </h4>
+                    <h5 class="footer__text">
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- [7] Footer End -->
+
+    <!-- [8] Copyright -->
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-4">
+
+                    <h4 class="copyright__title">
+                        Copyright © 2015 ActiveBox. All Rights Reserved
+                    </h4>
+
+                    <h5 class="copyright__text">
+                        Made with love
+                        <a href="#" title="verzion2k" class="copyright__link">
+                                by Zsolt Smith
+                        </a>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [8] Copyright End -->
+
+    <!-- jQuery JS -->
     <script src="/jquery/dist/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <!-- Popper.js, Bootstrap 4 -->
     <script src="/popper.js/dist/umd/popper.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 
