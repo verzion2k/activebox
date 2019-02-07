@@ -34,14 +34,17 @@ body {
     font-size: 0.8125rem;
     font-weight: 600;
     letter-spacing: 0.1em;
-    transition: box-shadow .3s; }
+    transition: all 0.5s ease; }
   .header__button:hover {
-    opacity: 0.7; }
+    transition: all 0.5s ease;
+    background-color: #3a3e64; }
 
 /* [1.2] Navigation Menu */
 .navbar {
+  z-index: 0;
   padding: 2.875rem 0;
-  border-bottom: 1px solid #6c7279; }
+  border-bottom: 1px solid #6c7279;
+  transition: all 0.5s ease; }
   .navbar .nav-item {
     color: #6c7279;
     font-weight: 700;
@@ -196,14 +199,18 @@ body {
     color: #fff;
     border: 0;
     outline: 0 !important;
-    cursor: pointer;
     padding: 1.125rem 3.125rem;
+    cursor: pointer;
     text-transform: uppercase;
     font-size: 0.8125rem;
     font-weight: 600;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    transition: all 0.5s ease; }
   .contact__button:hover {
-    opacity: 0.7; }
+    transition: all 0.5s ease;
+    background-color: #3a3e64; }
+  .contact__button:active {
+    color: green; }
 
 .form-control:focus {
   background-color: #fff;

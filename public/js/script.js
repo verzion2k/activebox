@@ -23,4 +23,11 @@ $(document).ready(function() {
         }
     });
 
+    $("#btnSubmit").click(function() {
+        $(this).attr("disabled", true);
+        $(this).text("Submitted");
+        $(this).css("background-color", "#3a3e64");
+    });
+
+
 });
