@@ -8,7 +8,7 @@ $(document).ready(function() {
         loop: true,
         margin: 10,
         dots: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 4000,
         responsive: {
             0: {
