@@ -256,7 +256,7 @@ body {
 /* Footer */
 
 .footer {
-    padding: 6.25rem 0;
+    padding: 6.25rem 0 3.25rem;
     background-color: #3a3e64;
     text-align: center;
     &__title {
@@ -341,5 +341,18 @@ body {
     }
     .contact__title--text {
         font-size: 1.5rem;
+    }
+    .testimonials__block {
+        margin-top: 3rem;
+    }
+    .testimonials__title {
+        font-size: 1.25rem;
+    }
+    .testimonials__author {
+        font-size: 0.7125rem;
+    }
+    .copyright__title,
+    .copyright__text {
+        font-size: 0.775rem;
     }
 }
