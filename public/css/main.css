@@ -153,6 +153,7 @@ body {
   .contact__title--text {
     color: #2d3033;
     font-weight: 700;
+    font-size: 2rem;
     padding: 0 1rem 3rem;
     text-align: center; }
   .contact__button {
@@ -226,3 +227,18 @@ body {
     color: #e84545;
     text-decoration: none;
     transition: all 0.5s ease; }
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+  .header {
+    padding-top: 6.25rem; }
+    .header__title {
+      font-size: 2.8rem; }
+    .header__desc {
+      font-size: 1.2rem; } }
+
+@media only screen and (max-width: 768px) {
+  .features__text {
+    font-size: 0.75rem; }
+  .contact__title--text {
+    font-size: 1.5rem !important; } }
