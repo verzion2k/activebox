@@ -23,11 +23,34 @@ $(document).ready(function() {
         }
     });
 
+    /*
     $("#btnSubmit").click(function() {
         $(this).attr("disabled", true);
         $(this).text("Submitted");
         $(this).css("background-color", "#3a3e64");
     });
+*/
 
+    $(".navbar").height();
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 300
+    });
+
+    function classOnScroll() {
+        let $nav = $('.navbar'),
+            $scroll = $(window).scrollTop();
+
+        if ($scroll > $nav.height()) {
+            if (!$nav.hasClass('is-active'))
+                $nav.addClass('is-active');
+        } else
+            $nav.removeClass('is-active');
+
+    }
+
+    classOnScroll();
+
+    $(window).on('scroll resize', classOnScroll);
 
 });
